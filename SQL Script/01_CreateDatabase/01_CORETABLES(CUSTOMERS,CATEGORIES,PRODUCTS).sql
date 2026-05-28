@@ -1,0 +1,25 @@
+USE ECommerceDB;
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY AUTO_INCREMENT,
+    FullName VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Phone VARCHAR(20) UNIQUE,
+    City VARCHAR(100),
+    JoinDate DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE Categories (
+    CategoryID INT PRIMARY KEY AUTO_INCREMENT,
+    CategoryName VARCHAR(100) NOT NULL,
+    Description VARCHAR(255)
+);
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY AUTO_INCREMENT,
+    ProductName VARCHAR(150) NOT NULL,
+    CategoryID INT,
+    Brand VARCHAR(100),
+    Price DECIMAL(10,2) NOT NULL,
+    StockQuantity INT DEFAULT 0,
+    CreatedDate DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (CategoryID)
+    REFERENCES Categories(CategoryID)
+);
