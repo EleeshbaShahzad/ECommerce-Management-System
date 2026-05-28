@@ -1,0 +1,69 @@
+ E-Commerce Database Schema Design
+
+Customers Table
+| Column Name | Data Type | Constraints |
+| CustomerID | INT | Primary Key, Identity |
+| FullName | VARCHAR(100) | NOT NULL |
+| Email | VARCHAR(100) | UNIQUE, NOT NULL |
+| Phone | VARCHAR(20) | UNIQUE |
+| City | VARCHAR(100) | NULL |
+| JoinDate | DATETIME | DEFAULT GETDATE() |
+
+Categories Table
+| Column Name | Data Type | Constraints |
+| CategoryID | INT | Primary Key, Identity |
+| CategoryName | VARCHAR(100) | NOT NULL |
+| Description | VARCHAR(255) | NULL |
+
+Products Table
+| Column Name | Data Type | Constraints |
+| ProductID | INT | Primary Key, Identity |
+| ProductName | VARCHAR(150) | NOT NULL |
+| CategoryID | INT | Foreign Key |
+| Brand | VARCHAR(100) | NULL |
+| Price | DECIMAL(10,2) | NOT NULL |
+| StockQuantity | INT | DEFAULT 0 |
+| CreatedDate | DATETIME | DEFAULT GETDATE() |
+
+Orders Table
+| Column Name | Data Type | Constraint|
+| OrderID | INT | Primary Key, Identity |
+| CustomerID | INT | Foreign Key |
+| OrderDate | DATETIME | DEFAULT GETDATE() |
+| OrderStatus | VARCHAR(50) | DEFAULT 'Pending' |
+| TotalAmount | DECIMAL(10,2) | NOT NULL |
+
+OrderDetails Table
+| Column Name | Data Type | Constraints |
+| OrderDetailID | INT | Primary Key, Identity |
+| OrderID | INT | Foreign Key |
+| ProductID | INT | Foreign Key |
+| Quantity | INT | NOT NULL |
+| UnitPrice | DECIMAL(10,2) | NOT NULL |
+
+ Payments Table
+| Column Name | Data Type | Constraints |
+| PaymentID | INT | Primary Key, Identity |
+| OrderID | INT | Foreign Key |
+| PaymentDate | DATETIME | DEFAULT GETDATE() |
+| PaymentMethod | VARCHAR(50) | NOT NULL |
+| PaymentAmount | DECIMAL(10,2) | NOT NULL |
+| PaymentStatus | VARCHAR(50) | DEFAULT 'Paid' |
+
+ Shipping Table
+| Column Name | Data Type | Constraints |
+| ShippingID | INT | Primary Key, Identity |
+| OrderID | INT | Foreign Key |
+| ShippingAddress | VARCHAR(255) | NOT NULL |
+| ShippingCity | VARCHAR(100) | NOT NULL |
+| ShippingStatus | VARCHAR(50) | DEFAULT 'Processing' |
+| DeliveryDate | DATETIME | NULL |
+
+Reviews Table
+| Column Name | Data Type | Constraints |
+| ReviewID | INT | Primary Key, Identity |
+| CustomerID | INT | Foreign Key |
+| ProductID | INT | Foreign Key |
+| Rating | INT | CHECK (Rating BETWEEN 1 AND 5) |
+| ReviewText | VARCHAR(500) | NULL |
+| ReviewDate | DATETIME | DEFAULT GETDATE() |
