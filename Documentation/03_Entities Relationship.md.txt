@@ -1,0 +1,53 @@
+Entities and Relationships
+
+ Main Entities
+
+ Customers
+Stores customer information.
+
+Categories
+Stores product categories.
+
+Products
+Stores product details and inventory.
+
+Orders
+Stores customer orders.
+
+OrderDetails
+Stores products included in each order.
+
+Payments
+Stores payment transactions.
+
+Shipping
+Stores shipping and delivery details.
+
+Reviews
+Stores customer product reviews.
+
+Relationships
+
+One Customer → Many Orders
+A customer can place multiple orders.
+
+One Order → Many OrderDetails
+An order can contain multiple products.
+
+One Product → Many OrderDetails
+A product can appear in multiple orders.
+
+One Category → Many Products
+A category can contain multiple products.
+
+One Order → One Payment
+Each order has one payment transaction.
+
+One Order → One Shipping Record
+Each order has shipping details.
+
+One Customer → Many Reviews
+Customers can review multiple products.
+
+One Product → Many Reviews
+Products can receive multiple reviews.

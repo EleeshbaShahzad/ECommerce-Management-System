@@ -1,0 +1,97 @@
+ERD Explanation
+Overview
+The ERD (Entity Relationship Diagram) represents the structure of the E-Commerce Management & Analytics System database.
+It visually explains:
+ Database tables
+ Primary Keys
+ Foreign Keys
+ Relationships
+ Business workflow
+
+Main Entities
+Customers
+Stores customer information.
+Categories
+Stores product categories.
+Products
+Stores product inventory and product catalog.
+Orders
+Stores customer order records.
+OrderDetails
+Stores products included in each order.
+Payments
+Stores order payment information.
+Shipping
+Stores delivery and shipping tracking details.
+Reviews
+Stores customer product reviews and ratings.
+
+Relationship Explanation
+
+Customers → Orders
+One customer can place multiple orders.
+Relationship:
+1 → N
+
+Orders → OrderDetails
+One order can contain multiple products.
+Relationship:
+1 → N
+
+Products → OrderDetails
+One product can appear in multiple orders.
+Relationship:
+1 → N
+
+Categories → Products
+One category can contain multiple products.
+Relationship:
+1 → N
+
+Orders → Payments
+Each order has one payment transaction.
+Relationship:
+1 → 1
+
+Orders → Shipping
+Each order has one shipping record.
+Relationship:
+1 → 1
+
+ Customers → Reviews
+One customer can give multiple reviews.
+Relationship:
+1 → N
+
+Products → Reviews
+One product can receive multiple reviews.
+Relationship:
+1 → N
+
+ Database Design Goals
+The database is designed to:
+ Maintain data integrity
+ Reduce data redundancy
+ Improve query performance
+ Support analytical reporting
+ Simulate real-world e-commerce workflows
+
+Business Workflow
+1. Customer registers
+2. Products added to catalog
+3. Customer places order
+4. Order details recorded
+5. Payment processed
+6. Inventory updated
+7. Shipping initiated
+8. Customer leaves review
+9. Analytics generated
+
+ Analytics Support
+The database supports:
+ Revenue analysis
+ Customer segmentation
+ Product performance tracking
+ Inventory analysis
+ Sales trend reporting
+ Payment analysis

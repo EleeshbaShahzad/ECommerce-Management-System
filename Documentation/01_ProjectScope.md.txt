@@ -1,0 +1,71 @@
+E-Commerce Management & Analytics System
+
+Project Overview
+This project is a complete SQL-based E-Commerce Management and Analytics System.
+The system is designed to manage:
+ Customers
+ Products
+ Categories
+ Inventory
+ Orders
+ Payments
+ Shipping
+ Reviews
+ Transactions
+Sales Analytics
+
+ Project Objectives
+The main objectives of this project are:
+ Design a normalized relational database
+ Implement real-world business workflows
+ Perform sales and customer analytics
+ Apply SQL optimization techniques
+ Build reusable SQL procedures
+ Implement triggers and transactions
+ Create portfolio-ready SQL project
+
+Users of the System
+
+Admin
+Manages complete system.
+
+Customer
+Places orders and reviews products.
+
+Warehouse Staff
+Manages inventory and stock.
+
+Finance Team
+Tracks payments and transactions.
+
+Data Analyst
+Analyzes business performance and KPIs.
+
+Main Modules
+ Customer Management
+ Product Management
+ Inventory System
+ Order Management
+ Payment Tracking
+ Shipping System
+ Product Reviews
+ Sales Analytics
+ Customer Segmentation
+
+ Technologies Used
+ SQL Server
+ SQL Server Management Studio (SSMS)
+ GitHub
+ dbdiagram.io
+
+Analytics Goals
+The analytics layer will provide:
+ Monthly Revenue Reports
+ Top-Selling Products
+ Customer Segmentation
+ Inventory Analysis
+ Sales Trends
+ Payment Analysis
+
+Project Type
+Intermediate to Advanced Industry-Level SQL Project

@@ -1,0 +1,84 @@
+ Requirement Analysis
+
+
+Business Overview
+The E-Commerce Management & Analytics System is designed to simulate a real-world online shopping platform.
+The system manages:
+- Customer accounts
+- Product catalog
+- Product categories
+- Inventory tracking
+- Customer orders
+- Order details
+- Payment processing
+- Shipping management
+- Product reviews
+- Business analytics
+
+Business Goals
+The system should:
+- Track customer purchases
+- Manage inventory automatically
+- Process online orders
+- Handle payments securely
+- Analyze sales performance
+- Monitor top-selling products
+- Identify valuable customers
+- Generate business KPIs
+
+ Main Business Workflow
+1. Customer registers
+2. Customer browses products
+3. Customer places order
+4. Order details recorded
+5. Payment processed
+6. Inventory updated
+7. Shipping initiated
+8. Customer leaves review
+9. Sales analytics generated
+
+ User Roles
+
+Admin
+Controls complete platform.
+
+Customer
+Places orders and reviews products.
+
+Warehouse Staff
+Handles inventory and shipping.
+
+Finance Team
+Tracks payments and revenue.
+
+Data Analyst
+Generates business insights and reports.
+
+Analytics Requirements
+The system should support:
+ Monthly revenue analysis
+ Top-selling products
+ Customer segmentation
+ Product performance analysis
+ Payment method analysis
+ Inventory trend analysis
+ Repeat customer tracking
+
+ Technical Requirements
+The database should include:
+ Primary Keys
+ Foreign Keys
+ Constraints
+ Stored Procedures
+ Triggers
+ Transactions
+ Indexing
+ Views
+ Analytical SQL Queries
+
+ Project Objective
+To build a production-style SQL database system that combines:
+ Database Development
+ Backend SQL Logic
+ Business Analytics
+ Performance Optimization
